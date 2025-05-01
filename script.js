@@ -180,13 +180,11 @@ sendBtn.addEventListener('click', (e) => {
 cancelBtn.addEventListener('click', () => {
   modal.style.display = 'none';
   modalHero.style.display = 'block';
+
 });
 
 // Сортировка
-sort.addEventListener('click', () => {
-  products.sort((a, b) => a.price - b.price);
-  renderProducts(products);
-});
+
 
 // Саат
 function clock() {
@@ -239,6 +237,18 @@ function renderProducts(arr) {
     control.appendChild(editBtn);
     control.appendChild(deleteBtn);
     card.appendChild(control);
+    sort.addEventListener('click', () => {
+      products.sort((a, b) => a.price - b.price);
+        editBtn.style.display = 'block'
+      renderProducts(products);
+    
+    });
+    cancelBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+      modalHero.style.display = 'block';
+      control.style.display = 'none'
+      
+    });
 
     // Өзгөртүү
     editBtn.addEventListener('click', () => {
