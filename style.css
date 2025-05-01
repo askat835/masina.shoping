@@ -1,0 +1,338 @@
+/* HEADER */
+.container{
+ margin: 0 auto;
+ padding: 0 auto;
+}
+
+.body{
+    background: black;
+    color: white;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.date{
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    background-color: greenyellow;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 800;
+ 
+    
+}
+.black{
+    background-color: black;
+    color: white;
+}
+.header-icon img{
+   height: 100px;
+   width: 100px;
+}
+.header-icon{
+    position: relative;
+
+}
+.header-icon h3{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    font-size: 21px;
+    font-weight: 900;
+    color: rgb(44, 157, 42);
+    margin-left: 17px;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 35px;   
+}
+.header{
+    display: flex;
+    align-items: center;
+  
+    justify-content: space-around;
+    
+    
+}
+/* HEADER */
+/* HERO */
+.hero{
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 100px;
+    
+   
+}
+.hero-img-text{
+     
+     position: relative; 
+   
+     overflow: hidden;
+    width: 890px;
+    height: 600px;
+    border-radius: 40px;
+    margin-left: 140px;
+    margin-top: 20px;  
+    transition: transform 0.5s ease;
+
+   
+    
+}
+.hero-img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+
+}
+img {
+ width: 100%;
+ height: 100%;
+}
+
+.btn button{
+    
+  
+
+
+    padding: 10px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 780px;
+    margin-left:15px;
+    position: absolute;
+    top: 340px;
+
+}
+.prev{
+    transform: rotate(180deg);
+}
+.header button{
+  width: 55px;
+  height: 40px;
+  background-color: greenyellow;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  
+}
+h1{
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    color: rgb(0, 255, 76);
+    
+}
+
+.card{
+ 
+    border-radius: 10px;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+/* HERO */
+
+/* CARD */
+#card{
+    padding: 90px 0;
+
+}
+.modal-btn{
+    padding: 10px 15px;
+    color: white;
+    background-color: rgb(255, 3, 3);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    margin: 15px;
+    
+
+}
+.modal-control{
+    display: none;
+}
+
+.card-text-btn button{
+   border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 15px;
+    background-color: rgb(0, 255, 76);;
+}
+
+.card-text-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card h2{
+    font-weight: 600;
+    
+}
+
+.card p{
+    font-size: 17px;
+}
+.card h3{
+    color: green;
+}
+.card:hover{
+    background-color: greenyellow;
+    
+}
+.card img{
+    transition: transform 0.3s ease;
+}
+img:hover {
+    transform: scale(1.1); /* 10% чоңойтуп көрсөтөт */
+  }
+
+ 
+.container-modal{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    
+     
+     
+        
+    }
+    
+    .container-modal input {
+    
+        padding: 15px 50px;
+        margin: 7px;
+        border-radius: 80px;
+        font-size: 13px;
+        font-weight: 700;
+    
+        color: black;
+    }
+    
+    .modalBtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 10px;
+    }
+    .edit{
+        padding: 10px 15px;
+        color: white;
+        background-color: rgb(255, 3, 3);
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        
+    
+    }
+    
+    .send{
+        padding: 10px 15px;
+        color: white;
+        background-color: rgb(12, 244, 12);
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        border: none;
+        margin: 15px;
+    
+    } 
+
+    .modal {
+        position: relative;
+        display: none; 
+        top:10px; /* 50% эмес, конкреттүү аралык */
+        left: 50%;
+        transform: translateX(-50%); /* X багытында гана центрлейбиз */
+        background: white;
+        padding: 20px;
+        border: 2px solid black;
+        z-index: 1000;
+        border-radius: 50px;
+        width: 1000px;
+        height: 400px;
+        background-image: url('https://sportishka.com/uploads/posts/2022-04/1651196966_1-sportishka-com-p-mnogo-mashin-mashini-krasivo-foto-2.jpg');
+        background-size: cover;
+        
+    }
+    
+/* .news{
+
+    width: 100%;
+    display: grid;
+    
+    
+  
+    
+    
+    
+
+ }
+ 
+ .new{
+    width: 100%;
+    display: flex;
+    align-items: center;
+ } */
+
+
+/* CARD */
+.card {
+    transition: all 0.3s ease; /* Жай өтүш үчүн */
+  }
+  
+  .cards.news .card {
+    /* Эгер news классын кошсо, автоматтык түрдө стил өзгөрөт */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 300px;
+  }
+  
+  .cards.news .card img {
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+  }
